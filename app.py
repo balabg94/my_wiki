@@ -6,7 +6,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('home.html')
+    titles = wiki.list_topics()
+    return render_template('home.html', page_titles=titles)
 
 @app.route('/<title>')
 def view_page(title):

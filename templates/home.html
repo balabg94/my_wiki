@@ -3,6 +3,11 @@
         <title>My Wiki</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>My Wiki</h1>
+        <ul>
+            {% for title in page_titles %}
+                <li><a href="/{{ title }}">{{ title }}</a></li>
+            {% endfor %}
+        </ul>
     </body>
 </html>
