@@ -8,9 +8,8 @@ app = Flask(__name__)
 def home():
     return render_template('home.html')
 
-@app.route('/Python')
-def view_page():
-    title = 'Python'
+@app.route('/<title>')
+def view_page(title):
     content = wiki.load_page(title)
     return render_template('page.html', page_content=content, page_title=title)
 
