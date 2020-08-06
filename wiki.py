@@ -16,7 +16,6 @@ def load_page(title):
 	try:
 		f=open(file_path, 'r')
 		content= f.read()
-		1+'2'
 	except FileNotFoundError:		
 		content="No information on this topic"
 		
