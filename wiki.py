@@ -1,7 +1,7 @@
 import os
 
 this_folder = os.path.dirname(os.path.abspath(__file__))
-pages_path = os.join(this_folder, 'pages')
+pages_path = os.path.join(this_folder, 'pages')
 
 
 def save_page(title, content):
