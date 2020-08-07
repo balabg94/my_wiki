@@ -22,6 +22,8 @@ def load_page(title):
 	return content
 
 def list_topics():
-	pages=os.listdir('pages')
-	out= ','.join(pages)
-	return out
+    pages=os.listdir('pages')
+    topics = []
+    for page in pages:
+        topics.append(os.path.splitext(page)[0])
+    return topics
