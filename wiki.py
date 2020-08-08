@@ -1,6 +1,8 @@
 import os
 
-pages_path='pages'
+this_folder = os.path.dirname(os.path.abspath(__file__))
+pages_path = os.path.join(this_folder, 'pages')
+
 
 def save_page(title, content):
 	file_name=title+'.txt'
@@ -22,7 +24,7 @@ def load_page(title):
 	return content
 
 def list_topics():
-    pages=os.listdir('pages')
+    pages=os.listdir(pages_path)
     topics = []
     for page in pages:
         topics.append(os.path.splitext(page)[0])
