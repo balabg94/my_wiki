@@ -1,0 +1,23 @@
+.page-header{
+background-color:#00bcd4;
+text-align:center;
+font-family: 'Lobster', cursive;
+margin:0;
+padding: 20px 20px 20px 40px
+}
+
+.page-header h1{
+color:#ffffff;
+font-size:36pt;
+}
+
+h1 a, h1 {
+color:#00000;
+font-family: 'Lobster', cursive;
+padding-left: 15px;
+text-decoration: none;
+}
+
+p {
+padding-left:35px;
+}
